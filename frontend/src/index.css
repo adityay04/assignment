@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont;
+    background: linear-gradient(120deg, #eef2ff, #f8fafc);
+    color: #1f2937;
+    padding: 40px 0;
+}
+
+/* Layout */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    padding: 32px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 32px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+/* Form Card */
+form {
+    background: #f9fafb;
+    padding: 24px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+    border: 1px solid #e5e7eb;
+}
+
+/* Form Grid */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.form-grid textarea {
+    grid-column: span 2;
+}
+
+/* Inputs */
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.15);
+}
+
+/* Buttons */
+button {
+    margin-top: 16px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: none;
+    background: #6366f1;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background: #4f46e5;
+    transform: translateY(-1px);
+}
+
+button:disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Messages */
+.error {
+    color: #dc2626;
+    margin-bottom: 12px;
+}
+
+.success {
+    color: #16a34a;
+    margin-bottom: 12px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 8px;
+}
+
+thead th {
+    text-align: left;
+    padding: 12px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+tbody tr {
+    background: #f9fafb;
+    border-radius: 8px;
+}
+
+tbody td {
+    padding: 12px;
+}
+
+tbody tr:hover {
+    background: #eef2ff;
+}
+
+/* Delete Button */
+td button {
+    background: #ef4444;
+    padding: 8px 14px;
+    border-radius: 8px;
+}
+
+td button:hover {
+    background: #dc2626;
+}
